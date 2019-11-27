@@ -29,7 +29,7 @@
 
 int gTotalNumberOfNodes = 0;
 int gNumberOfNeighbours = 0;
-char gTopologyFileName[1024] = "./server1.txt";
+char gTopologyFileName[1024] = "";
 int gUpdateInterval = 0;
 char gLocalIP[50] = "";
 int16_t gLocalPort = 0;
