@@ -265,7 +265,7 @@ Node *convertMessageIntoDistanceVector(char *message, int32_t *baseId)
             }
         }
         gUpdateCount++;
-        printf("RECEIVED A MESSAGE FROM SERVER %hd\n", *baseId);
+        printf("RECEIVED A MESSAGE FROM SERVER %d\n", *baseId);
         fflush(stdout);
     }
 
@@ -540,7 +540,7 @@ void initialiseLists()
 			tok=strtok_r(NULL," ",&saveptr2);
 			sscanf(tok,"%i",&cost);*/
 
-            sscanf(line, "%hd%hd%hd", &source, &dest, &cost);
+            sscanf(line, "%d%d%d", &source, &dest, &cost);
             //cost=atoi(tok);
             int index = indexOfNodeWithId(dest);
             if (index < 0) // should never happen
